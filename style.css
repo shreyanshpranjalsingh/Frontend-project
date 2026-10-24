@@ -12,6 +12,19 @@ html,body{
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #F7F7F7;
+
+}
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    position: fixed;
+    transform: scale();
+
+}
 
 #page1{
     min-height: 100vh;
@@ -69,6 +82,9 @@ html,body{
     /*background-color: rgb(204, 8, 8);*/
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #page2 .elem img{
     height: 100vh;
@@ -84,16 +100,36 @@ html,body{
     width: 80%;
     position:absolute;
     z-index: 9;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     background-color: blanchedalmond;
 
 }
 #page2 .elem .dets:hover{
     height: 200px;
 }
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color:rgb(243, 238, 238) ;
+}
+.child{
+    height:55vh ;
+    width: 40vw;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+
+}
+.child img{
+    height:100% ;
+}
 
 @media (max-width:600px){
     #page1{
